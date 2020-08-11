@@ -1,0 +1,79 @@
+// Contains resets, variables, mixins, and utility classes.
+// https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
+
+// Body Styles
+$font-stack: 'Roboto',sans-serif;;
+$margins: 40px;
+
+// Colors:
+$primary-green: rgb(76, 216, 63);
+$primary-green-hover: rgb(118, 238, 194);
+$primary-purple: rgb(190, 129, 196);
+$primary-orange: rgb(255, 160, 72);
+$primary-blue:  rgb(148, 165, 202);
+$primary-gray: slategray;
+
+$header-title-font-color: white;
+
+
+$button-background-color: $primary-green;
+$button-hover-color: $primary-green-hover;
+$button-font-color: white;
+
+// Diagram blocks
+$block-width: 150px;
+$block-height: 75px;
+$block-font-color: white;
+$block-font-size: 1.5em;
+
+// Mixins:
+
+@mixin borderBox() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin circle($color) {
+    background: $color;
+    border-radius: 4em;
+    width: $block-width;
+    height: $block-height;
+}
+
+@mixin rectangle($color) {
+    background: $color;
+    width: 100px;
+    height: 20px;
+}
+
+@mixin triangle-point-right($color) {
+    background: $color;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid lightblue;
+}
+
+@mixin triangle-point-left($color) {
+    background: $color;
+    width: 0;
+    height: 0;
+    border-right: 80px solid transparent;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid lightblue;
+}
+
+@mixin button {
+    border-radius: 2em;
+    border: none;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    background-color: $button-background-color;
+    color: $button-font-color;
+
+}
+
+// Deal with breakpoints 600, 900, 1200

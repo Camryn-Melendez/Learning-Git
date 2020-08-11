@@ -1,0 +1,75 @@
+// CSS for the layout of the page
+
+body {
+    font-family: $font-stack;
+    margin: 0px;
+}
+
+.header {
+    @include borderBox;
+    width: 100vw;
+    text-align: center;
+    background: $primary-orange;
+    padding: 30px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 3em;
+    color: $header-title-font-color;
+}
+
+.header-description {
+    margin: 0;
+    padding: 10px;
+}
+
+.sidebar {
+    @include borderBox();
+    padding: 10px;
+    width: 275px;
+    float: left;
+    position: sticky;
+    top: 0;
+
+}
+
+.button-sidebar-row {
+    @include borderBox;
+    padding: 10px;
+    top: 0px;
+
+}
+
+.content-diagram {
+    @include borderBox();
+    vertical-align: top;
+    width: 100vw;
+    height: 100%;
+}
+
+.file-flow-diagram {
+    @include borderBox;
+    // display to right of sidebar
+    margin-left: 275px;
+    display: block;
+    background-color: $primary-blue;
+    height: 1000px;
+}
+
+.commit-flow-diagram {
+    @include borderBox;
+    // display to right of sidebar
+    margin-left: 275px;
+    display: block;
+    background-color: $primary-gray;
+    height: 1000px;
+}
+
+// Flow row for both diagrams.
+.flow-row {
+    @include borderBox;
+    display: flex;
+    justify-content: space-around;
+
+}

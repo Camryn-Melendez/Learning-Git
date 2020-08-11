@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Starter</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<div class= "header">
+  <div id="page-header-title" class="header-title">Welcome to Learning Git!</div>
+  <div class="header-description">The simple, interactive way to visualize and learn git version control.</div>
+</div>
+
+<div class="sidebar" id="git-controls">
+  Controls:
+  <div class="button-sidebar-row">
+    1. 
+    <button id="button-create-local-repo" class="my-button">Start a new project</button>
+    <button id="button-create-remote-repo" class="my-button">Add to existing project</button>
+  </div>
+</div>
+
+
+<div class="content-diagram" id="git-diagram">
+
+  <div class="file-flow-diagram">
+    <div class="flow-row" id="flow-row-repos">
+
+    </div>
+
+    <div class="arrow" id="diagram-git-add"></div>
+    <div class="arrow" id="diagram-git-commit"></div>
+    <div class="arrow" id="diagram-git-push"></div>
+    <div class="arrow" id="diagram-git-pull"></div>
+    <div class="arrow" id="diagram-git-checkout"></div>
+    <div class="arrow" id="diagram-git-merge"></div>
+
+  </div>
+
+  <div class="commit-flow-diagram">
+    <div class="block" id="diagram-master-branch"></div>
+    <div class="flow-row">
+      <div class="block" id="diagram-first-commit"></div>
+      <div class="block" id="diagram-second-commit"></div>
+      <div class="block" id="diagram-third-commit"></div>
+    </div>
+    <div class="block" id="diagram-first-branch"></div>
+    <div class="block" id="diagram-head"></div>
+  </div>
+</div>
+
+
+
+<script src="./utils.js"></script>
+<script src="./home.js"></script>
+</body>
+
+</html>

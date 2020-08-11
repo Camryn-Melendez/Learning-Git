@@ -1,0 +1,56 @@
+4/14/20: INTRO TO JS
+
+    GENERAL:
+    - Scripts like jquery and bootstrap and libraries can be put in the head section of the
+        html page. Our own script tags need to modify elements of the page so we put them right
+        before the closing body tag at the end of the document.
+
+    - To see errors in javascript: right click > Inspect > Console
+        here you can see all the errors in your javascript if they are not
+        easily spotted in your code editor
+
+    - TO START LOCAL SERVER: npm run START
+    - TO END DEVELOPMENT: ctrl + C (stops it)
+
+
+    VARIABLES AND OTHER BASIC SYNTAX:
+    - When we declare a variable, use LET. This value can change.
+        ie) let total = 149.99;
+
+    - When you want to declare a value that can't change, use CONST.
+        ie) const price = 10.99;
+        If you try to reassign a const, there will be an error in the console.
+        Also, you must also set a const to a value when you declare it.
+
+    - Therefore, when declaring a variable, you must know whether this variable is going
+      to change. It will determine if you need to use LET or CONST.
+
+    - It is not best practice to use VAR. You should know what you are trying to define,
+      so you should be able to determine if you need LET or CONST.
+
+    - VAR does not show the errors that you would expect (in the console), 
+      making it harder to debug.
+
+    - Modulus is the equivalent of finding the remained of a division.
+      price += 5 is the same as price = price + 5. You can do this with the other operators.
+
+    - Escaping Characters: put a backsplash (\) before the Character
+      ie) \" for a double quote in a string
+      ie) \n for a newline
+
+    - Backticks instead of double quotes: we can embed variables into the string
+      ie) let name = 'Andrea'
+          let message = 'Hello ${name}'
+
+    - You can also put new lines in this type of quote;
+      ie) let hello = 'Hello
+
+                       World' // this string includes the new lines
+
+      ie) message.substring(start int)
+      Indexing starts at 0, substring includes start character
+
+    - When parsing a string for a number, make sure that the first character
+      is a number, otherwise it won't be recognized. Use Number.parseFloat("146984");
+
+

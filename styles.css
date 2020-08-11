@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+.header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: center;
+  background: #ffa048;
+  padding: 30px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 3em;
+  color: white;
+}
+
+.header-description {
+  margin: 0;
+  padding: 10px;
+}
+
+.sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 275px;
+  float: left;
+  position: sticky;
+  top: 0;
+}
+
+.button-sidebar-row {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  top: 0px;
+}
+
+.content-diagram {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 100vw;
+  height: 100%;
+}
+
+.file-flow-diagram {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 275px;
+  display: block;
+  background-color: #94a5ca;
+  height: 1000px;
+}
+
+.commit-flow-diagram {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 275px;
+  display: block;
+  background-color: slategray;
+  height: 1000px;
+}
+
+.flow-row {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-button {
+  border-radius: 2em;
+  border: none;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  background-color: #4cd83f;
+  color: white;
+}
+.my-button:hover {
+  background-color: #76eec2;
+}
+
+.block, .circle, .remote-repo-block, .local-repo-block {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+.circle, .remote-repo-block, .local-repo-block {
+  background: slategray;
+  border-radius: 4em;
+  width: 150px;
+  height: 75px;
+}
+
+.local-repo-block {
+  left: 25%;
+}
+
+.remote-repo-block {
+  left: 75%;
+}
+
+/*# sourceMappingURL=styles.css.map */

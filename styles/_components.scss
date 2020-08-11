@@ -1,0 +1,37 @@
+//CSS for the components of the page.
+
+//Button styles.
+.my-button {
+    @include button; 
+
+    &:hover {
+        background-color: $button-hover-color;
+    }
+}
+
+.block {
+    @include borderBox;
+
+    // add a display to center the text.
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bold;
+    font-size: $block-font-size;
+    color: $block-font-color;
+}
+
+.circle {
+    @extend .block;
+    @include circle($primary-gray);
+}
+
+.local-repo-block {
+    @extend .circle;
+    left: 25%;
+}
+
+.remote-repo-block {
+    @extend .circle;
+    left: 75%;
+}
